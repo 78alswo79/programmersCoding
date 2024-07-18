@@ -2,7 +2,7 @@
     <ul class = "ul">
         <input type = "text" id="input1"/>
         <label for = "input1" class="forClass">
-            <p>''</p>
+            <p>'""""""'</p>
         </label>
         <div id = "methodDiv1" name = "alert_popup" onclick = "javascript:methodDiv1(this);"></div>
     </ul>
@@ -22,7 +22,7 @@
             if (event.key === 'Enter') {
                 // label p에 텍스트가 있으면, 팝업실행X
                 // 반대면, 팝업실행 O
-                let txt = element.querySelector('.forClass');
+                let txt = element.querySelector('.forClass p');
                 if (txt.innerText) {
                     console.log(`p태그에 텍스트가 있습니다...>>>>${txt.innerText}`);
                 } else {
