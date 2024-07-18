@@ -1,0 +1,45 @@
+<div id = "divId">
+    <ul class = "ul">
+        <input type = "text" id="input1"/>
+        <label for = "input1" class="forClass">
+            <p>''</p>
+        </label>
+        <div id = "methodDiv1" name = "alert_popup" onclick = "javascript:methodDiv1(this);"></div>
+    </ul>
+    <ul class = "ul">
+        <input type = "text" id= "input2"/>
+        <label for = "input2" class="forClass">
+            <p></p>
+        </label>
+        <div id = "methodDiv1" name = "alert_popup" onclick = "javascript:methodDiv2(this);"></div>
+    </ul>
+</div>
+<script>
+    // 출발/도착지 엔터 검색 팝업
+    let uls = document.querySelectorAll('div#divId .ul');
+    uls.forEach((element, idx) => {
+        element.addEventListener("keydown", event =>{
+            if (event.key === 'Enter') {
+                // label p에 텍스트가 있으면, 팝업실행X
+                // 반대면, 팝업실행 O
+                let txt = element.querySelector('.forClass');
+                if (txt.innerText) {
+                    console.log(`p태그에 텍스트가 있습니다...>>>>${txt.innerText}`);
+                } else {
+                    console.log(`p태그에 텍스트가 없습니다.>>>>>>${txt.innerText} 팝업을 실행합니다.`);
+                    let popup = element.querySelector('[name=alert_popup]');
+                    if (popup) popup.click();
+                }
+            }
+        })
+    })
+
+    function methodDiv1(obj) {
+        alert("methodDiv1 메소드 팝업을 여셧씁니다");
+    }
+
+    function methodDiv2(obj) {
+        alert("methodDiv2 메소드 팝업을 여셧씁니다");
+    }
+
+</script>
