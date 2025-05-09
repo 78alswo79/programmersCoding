@@ -43,17 +43,17 @@ public class coding2 {
         
         
 		// 다른 사람의 풀이
-        int[] arr = {49, 12, 100, 276, 33};
-		int n = 27;
-        int[] answer = new int[arr.length];
-        
-        int staIdx = arr.length % 2 == 0 ? 1 : 0;
-        
-        
-        for (int i = staIdx; i < arr.length; i += 2) {
-        	arr[i] = arr[i] + n;
-        }
-        System.out.println(Arrays.toString(arr));
+//        int[] arr = {49, 12, 100, 276, 33};
+//		int n = 27;
+//        int[] answer = new int[arr.length];
+//        
+//        int staIdx = arr.length % 2 == 0 ? 1 : 0;
+//        
+//        
+//        for (int i = staIdx; i < arr.length; i += 2) {
+//        	arr[i] = arr[i] + n;
+//        }
+//        System.out.println(Arrays.toString(arr));
 	}
 
 }

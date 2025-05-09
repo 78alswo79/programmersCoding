@@ -37,13 +37,13 @@ public class test1 {
 	    System.out.println(Arrays.toString(answer));
 	    
 		// 다른 사람의 방식
-		int[] num_list = {2, 1, 6};
-		int n = 1;
-	    int[] answer = new int[num_list.length];
-		
-	    for (int i = 0; i < num_list.length; i++) {
-	    	answer[i] = num_list[(i + n) % num_list.length];
-	    }
-	    System.out.println(Arrays.toString(answer));
+//		int[] num_list = {2, 1, 6};
+//		int n = 1;
+//	    int[] answer = new int[num_list.length];
+//		
+//	    for (int i = 0; i < num_list.length; i++) {
+//	    	answer[i] = num_list[(i + n) % num_list.length];
+//	    }
+//	    System.out.println(Arrays.toString(answer));
 	}
 }

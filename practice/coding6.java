@@ -25,12 +25,12 @@ public class coding6 {
         System.out.println(answer);
         
 		// regex 표현
-        String myString = "abcdevwxyz";
-        String answer = "";
-        
-        answer = myString.replaceAll("[a-k]", "l");
-        
-        System.out.println(answer);
+//        String myString = "abcdevwxyz";
+//        String answer = "";
+//        
+//        answer = myString.replaceAll("[a-k]", "l");
+//        
+//        System.out.println(answer);
         
 	}
 
